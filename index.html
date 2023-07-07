@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/videojs.min.css">
+    <title>Video Chat</title>
+</head>
+<body>
+    <div class="containerVideoChat">
+        <div class="containerVideo">
+            <video controls class="video-js" id="video-1" data-setup=
+        '{
+			"techOrder": ["youtube"],
+			"sources": 
+            [{
+			  "type": "video/youtube",
+			  "src": "https://www.youtube.com/watch?v=mmBEZ3x-QRo"
+			}]
+		}'
+        >
+             </video>
+        </div>
+            <div class="containerChat">
+                    <div class="title">
+                        Chat
+                    </div>
+                  <div class="chat-container">
+                    <div class="chat-messages"></div>
+                        <form class="chat-input-form">
+                            <input type="text" class="chat-input" required placeholder="Type message here.." />
+                            <button type="submit" class="button send-button">Send</button>
+                        </form>
+                    <button class="button clear-chat-button">Clear Chat</button>
+                  </div>
+            </div>
+    </div>  
+</body>
+
+<script src="js/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.0/Youtube.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.1/lang/ru.min.js"></script>
+<script defer src="./js/script.js"></script>
+</html>
